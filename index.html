@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Conversational Widget Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .demo-section {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            margin: 30px 0;
+        }
+        
+        .instructions {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .widget-container {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+        
+        .highlight {
+            background: rgba(255,255,0,0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Conversational Widget</h1>
+        <p class="subtitle">Live-Demonstration der ElevenLabs Conversational AI</p>
+        
+        <div class="demo-section">
+            <h2>Widget in Aktion</h2>
+            <p>Klicken Sie auf das Widget unten, um eine Unterhaltung zu starten:</p>
+            
+            <div class="widget-container">
+                <!-- ElevenLabs Conversational AI Widget -->
+                <elevenlabs-convai agent-id="agent_01jq1h9c4ec2sg9qm9v2q28dv"></elevenlabs-convai>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 Demo-Features</h3>
+            <ul>
+                <li><span class="highlight">Sprachinteraktion</span> - Sprechen Sie direkt mit der KI</li>
+                <li><span class="highlight">Text-Input</span> - Oder tippen Sie Ihre Nachricht</li>
+                <li><span class="highlight">Multimodal</span> - Unterstützt verschiedene Eingabemethoden</li>
+                <li><span class="highlight">Echtzeit</span> - Sofortige Antworten</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Powered by ElevenLabs Conversational AI | Demo-Website</p>
+        </div>
+    </div>
+
+    <!-- ElevenLabs Conversational AI Script -->
+    <script src="https://elevenlabs.io/convai-widget/index.js" async></script>
+</body>
+</html>
